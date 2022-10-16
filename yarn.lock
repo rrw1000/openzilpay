@@ -2090,14 +2090,14 @@
     "regexparam" "2.0.0"
 
 "svelte@^3.23.0", "svelte@^3.24.0", "svelte@^3.25.1", "svelte@^3.48.0", "svelte@>=3.5.0":
-  "integrity" "sha512-fN2YRm/bGumvjUpu6yI3BpvZnpIm9I6A7HR4oUNYd7ggYyIwSA/BX7DJ+UXXffLp6XNcUijyLvttbPVCYa/3xQ=="
-  "resolved" "https://registry.npmjs.org/svelte/-/svelte-3.48.0.tgz"
-  "version" "3.48.0"
+  "integrity" "sha512-FxcnEUOAVfr10vDU5dVgJN19IvqeHQCS1zfe8vayTfis9A2t5Fhx+JDe5uv/C3j//bB1umpLJ6quhgs9xyUbCQ=="
+  "resolved" "https://registry.npmjs.org/svelte/-/svelte-3.52.0.tgz"
+  "version" "3.52.0"
 
 "terser@^5.0.0":
-  "integrity" "sha512-JC6qfIEkPBd9j1SMO3Pfn+A6w2kQV54tv+ABQLgZr7dA3k/DL/OBoYSWxzVpZev3J+bUHXfr55L8Mox7AaNo6g=="
-  "resolved" "https://registry.npmjs.org/terser/-/terser-5.14.0.tgz"
-  "version" "5.14.0"
+  "integrity" "sha512-K1faMUvpm/FBxjBXud0LWVAGxmvoPbZbfTCYbSgaaYQaIXI3/TdI7a7ZGA73Zrou6Q8Zmz3oeUTsp/dj+ag2Xw=="
+  "resolved" "https://registry.npmjs.org/terser/-/terser-5.15.1.tgz"
+  "version" "5.15.1"
   dependencies:
     "@jridgewell/source-map" "^0.3.2"
     "acorn" "^8.5.0"
