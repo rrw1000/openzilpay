@@ -48,12 +48,8 @@ export const ZLP = {
   pool: []
 };
 const INIT = {
-  [mainnet]: [ZIL, ZLP],
-  [testnet]: [ZIL, {
-    ...ZLP,
-    base16: '0x55cb580c6bdf40e400f3714651bb7643bca24de4',
-    bech32: 'zil12h94srrtmaqwgq8nw9r9rwmkgw72yn0yc7x9ud'
-  }],
+  [mainnet]: [ZIL],
+   [testnet]: [ZIL],
   [custom]: [ZIL]
 };
 
