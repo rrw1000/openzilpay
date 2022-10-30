@@ -39,7 +39,7 @@ export class RateController {
   public async updateRate() {
     try {
       const url = `${MAIN_API}/rates`;
-  
+
       const response = await fetch(url);
       const data = await response.json();
       const rate = data as RateCurrencies;

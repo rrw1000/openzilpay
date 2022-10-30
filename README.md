@@ -16,7 +16,7 @@ You can deploy the local version, from source code.
 # Install dependencies
 $ npm install
 # Build stuff
-$ npm dev
+$ npm run dev
 # Install it via "install unpacked" in chrome
 ```
 
