@@ -42,6 +42,13 @@ For production building and deploy.
 $ npm run build
 ```
 
+## Updating icons
+
+ * Change `assets/logo.*` (you need `.png` and `.webp` versions)
+ * Install imagemagick
+ * Run `node scripts/scale_icons.js`
+ * .. and it will autobuild the scaled icons for you.
+
 ## Built With
 
 * [webpack](https://github.com/webpack/webpack)
@@ -56,6 +63,5 @@ $ npm run build
 ## License
 
 This project is licensed under the GPLv3 (because that was the licence when it was forked).
-
 
 
