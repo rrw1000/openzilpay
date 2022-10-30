@@ -69,7 +69,11 @@
 
       push('/');
     } catch (err) {
-      error = err.message;
+      var msg = err.message
+      if (msg.includes("0x650f")) {
+        msg = msg + " - ensure your device is unlocked and has the Zilliqa app running"
+      }
+      error = msg;
     }
     loading = false;
   };
@@ -86,6 +90,7 @@
   <h2>
     {error}
   </h2>
+  <p>{$_('ledger.conn_advice')}</p>
   <form
     in:fly={flyTransition.in}
     on:submit={handleSubmit}

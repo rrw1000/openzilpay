@@ -53,8 +53,9 @@
   "ledger": {
     "title": "Ledger connect",
     "placeholder": "Select an index your ledger address.",
-    "info": "ledger is separated your addresses by index, for restore your account you can select any index from 0 to 256",
-    "btn": "Connect"
+    "info": "Enter the ledger account index to use from 0 to 256; default is 0",
+    "btn": "Connect",
+    "conn_advice" : "Ensure that your ledger is unlocked and that the Zilliqa app is active before clicking connect"
   },
   "ledger_finder": {
     "title": "Looking at devices",
@@ -150,7 +151,7 @@
   "setup_acc": {
     "title": "Account setup",
     "name_placeholder": "Name of account (3-25 characters)",
-    "name_description": "A wallet name is using to help you distinguish different account from one another.",
+    "name_description": "Use a wallet name to help you distinguish different accounts from each other",
     "pass_description": "A password required for encrypt and protect your keys.",
     "accept": "Accept PrivacyPolicy"
   },
