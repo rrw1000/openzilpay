@@ -10,6 +10,7 @@ import type { Formats } from 'config/formats';
 import type { Locales } from 'config/locale';
 import type { Themes } from 'config/theme';
 import { fromBech32Address } from 'lib/utils/bech32';
+import { testForAddress } from 'lib/utils/address/hex';
 import type { StreamResponse } from 'types/stream';
 import type { ZIlPayCore } from './core';
 
@@ -218,11 +219,16 @@ export class ZilPaySettings {
 
   public async fromBech32(bech32: string, sendResponse: StreamResponse) {
     try {
-      const base16 = fromBech32Address(bech32);
+      if (testForAddress(bech32)) {
+        // It's already base16
+        sendResponse({ resolve: bech32 })
+      } else {
+        const base16 = fromBech32Address(bech32);
 
-      sendResponse({
-        resolve: base16
-      });
+        sendResponse({
+          resolve: base16
+        });
+      }
     } catch (err) {
       sendResponse({
         reject: err.message

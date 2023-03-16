@@ -18,11 +18,17 @@ export const isByteString = (str: string, len: number) => {
   return Boolean(tohexString(str).match(`^[0-9a-fA-F]{${len}}$`));
 };
 
+// @TODO swap testForAddress and isAddress - rrw 2023-03-15
 export const isAddress = (address: string) => {
   if (!isByteString(address, 40)) {
     throw new Error(ErrorMessages.Base16NotValid);
   }
 };
+
+export const testForAddress = (address : string ) : boolean => {
+  return isByteString(address, 40);
+}
+
 
 export const toChecksumAddress = (address: string): string => {
   isAddress(address);
