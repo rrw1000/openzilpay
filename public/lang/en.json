@@ -55,7 +55,7 @@
     "placeholder": "Select an index your ledger address.",
     "info": "Enter the ledger account index to use from 0 to 256; default is 0",
     "btn": "Connect",
-    "conn_advice" : "Ensure that your ledger is unlocked and that the Zilliqa app is active before clicking connect"
+    "conn_advice" : "Ensure that you have configured hotplug to allow user connections from ledger devices, that your ledger is unlocked and that the Zilliqa app is active before clicking connect"
   },
   "ledger_finder": {
     "title": "Looking at devices",

@@ -6,7 +6,7 @@
  * -----
  * Copyright (c) 2021 ZilPay
  */
-import type Transport from '@ledgerhq/hw-transport';
+import type Transport from '@ledgerhq/hw-transport-webhid';
 
 import TransportWebHID from '@ledgerhq/hw-transport-webhid';
 import assert from 'assert';
@@ -40,15 +40,13 @@ export class LedgerWebHID {
       }]
     });
     const [device] = devices.filter((d) => d.productId === productId);
-
     assert(Boolean(device), ErrorMessages.NoFoundDeviced);
 
     if (this.#transport) {
       await this.#transport.close();
     }
 
-    this.#transport = await TransportWebHID.open(device);;
-
+    this.#transport = await TransportWebHID.open(device);
     return this.#transport;
   }
 

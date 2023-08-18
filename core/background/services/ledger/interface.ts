@@ -8,7 +8,7 @@
  */
 import type { Transaction } from 'core/background/services/transactions/tx-builder';
 import type { MessagePayload } from 'types/transaction';
-import type Transport from '@ledgerhq/hw-transport';
+import type Transport from '@ledgerhq/hw-transport-webhid';
 import { Buffer } from 'buffer';
 import assert from 'assert';
 
@@ -30,6 +30,7 @@ export class LedgerInterface {
 
   constructor(transport: Transport, scrambleKey = 'w0w') {
     this.#transport = transport;
+    alert('case 2.2');
     transport.decorateAppAPIMethods(
       this,
       ['getVersion', 'getPublicKey', 'getPublicAddress', 'signHash', 'signTxn'],
