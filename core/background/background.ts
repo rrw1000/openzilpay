@@ -16,6 +16,7 @@ export function startBackground(core: ZIlPayBackground) {
       sendResponse(null);
       return true;
     }
+    console.log(`Msg - ${JSON.stringify(msg)}`)
     switch (msg.type) {
       case MTypePopup.GET_LATEST_BLOCK:
         core.netwrok.getLatestBlockNumber(sendResponse);
@@ -81,6 +82,7 @@ export function startBackground(core: ZIlPayBackground) {
         core.settings.updateRate(sendResponse);
         return true;
       case MTypePopup.LEDGER_LOAD_ACCOUNT:
+        console.log("LEDGER_LOAD_ACCOUNT");
         core.wallet.loadLedgerAccount(msg.payload, sendResponse);
         return true;
       case MTypePopup.ADD_CONTACT:

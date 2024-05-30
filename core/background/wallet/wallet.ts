@@ -172,10 +172,13 @@ export class ZilPayWallet {
 
   public async loadLedgerAccount(payload: LedgerParams, sendResponse: StreamResponse) {
     try {
+      console.log("X0");
       this.#core.guard.checkSession();
+      console.log("X0.1");
       await this.#core.ledger.init(payload.productId);
+      console.log("X0.2");
       const { publicKey, pubAddr } = await this.#core.ledger.interface.getPublicAddress(payload.index);
-
+      console.log("X1");
       await this.#core.account.addLedgerAccount(
         publicKey,
         pubAddr,
@@ -183,12 +186,14 @@ export class ZilPayWallet {
         payload.name,
         payload.productId
       );
+      console.log("X2");
       await this.#core.transactions.sync();
       await this.#core.nft.sync();
-
+      console.log("X3");
       sendResponse({
         resolve: this.#core.state
       });
+      console.log("X4");
     } catch (err) {
       sendResponse({
         reject: err.message

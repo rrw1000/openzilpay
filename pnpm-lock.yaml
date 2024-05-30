@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@ledgerhq/hw-transport':
-    specifier: ^6.28.8
-    version: 6.28.8
+    specifier: ^6.30.6
+    version: 6.30.6
   '@ledgerhq/hw-transport-webhid':
-    specifier: ^6.27.19
-    version: 6.27.19
+    specifier: ^6.28.6
+    version: 6.28.6
   '@metamask/jazzicon':
     specifier: ^2.0.0
     version: 2.0.0
@@ -427,38 +427,39 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@ledgerhq/devices@8.0.7:
-    resolution: {integrity: sha512-BbPyET52lXnVs7CxJWrGYqmtGdbGzj+XnfCqLsDnA7QYr1CZREysxmie+Rr6BKpNDBRVesAovXjtaVaZOn+upw==}
+  /@ledgerhq/devices@8.3.0:
+    resolution: {integrity: sha512-h5Scr+yIae8yjPOViCHLdMjpqn4oC2Whrsq8LinRxe48LEGMdPqSV1yY7+3Ch827wtzNpMv+/ilKnd8rY+rTlg==}
     dependencies:
-      '@ledgerhq/errors': 6.14.0
-      '@ledgerhq/logs': 6.10.1
-      rxjs: 6.6.7
+      '@ledgerhq/errors': 6.16.4
+      '@ledgerhq/logs': 6.12.0
+      rxjs: 7.8.1
       semver: 7.5.4
     dev: false
 
-  /@ledgerhq/errors@6.14.0:
-    resolution: {integrity: sha512-ZWJw2Ti6Dq1Ott/+qYqJdDWeZm16qI3VNG5rFlb0TQ3UcAyLIQZbnnzzdcVVwVeZiEp66WIpINd/pBdqsHVyOA==}
+  /@ledgerhq/errors@6.16.4:
+    resolution: {integrity: sha512-M57yFaLYSN+fZCX0E0zUqOmrV6eipK+s5RhijHoUNlHUqrsvUz7iRQgpd5gRgHB5VkIjav7KdaZjKiWGcHovaQ==}
     dev: false
 
-  /@ledgerhq/hw-transport-webhid@6.27.19:
-    resolution: {integrity: sha512-RMnktayqqLE2uFQDw9TKoW+WSP8KnT0ElKcIISf3sXVrzHD2y0moPk/wXOzGfi+cgN4uiKy86UD/5mgz3wlm6Q==}
+  /@ledgerhq/hw-transport-webhid@6.28.6:
+    resolution: {integrity: sha512-npU1mgL97KovpTUgcdORoOZ7eVFgwCA7zt0MpgUGUMRNJWDgCFsJslx7KrVXlCGOg87gLfDojreIre502I5pYg==}
     dependencies:
-      '@ledgerhq/devices': 8.0.7
-      '@ledgerhq/errors': 6.14.0
-      '@ledgerhq/hw-transport': 6.28.8
-      '@ledgerhq/logs': 6.10.1
+      '@ledgerhq/devices': 8.3.0
+      '@ledgerhq/errors': 6.16.4
+      '@ledgerhq/hw-transport': 6.30.6
+      '@ledgerhq/logs': 6.12.0
     dev: false
 
-  /@ledgerhq/hw-transport@6.28.8:
-    resolution: {integrity: sha512-XxQVl4htd018u/M66r0iu5nlHi+J6QfdPsORzDF6N39jaz+tMqItb7tUlXM/isggcuS5lc7GJo7NOuJ8rvHZaQ==}
+  /@ledgerhq/hw-transport@6.30.6:
+    resolution: {integrity: sha512-fT0Z4IywiuJuZrZE/+W0blkV5UCotDPFTYKLkKCLzYzuE6javva7D/ajRaIeR+hZ4kTmKF4EqnsmDCXwElez+w==}
     dependencies:
-      '@ledgerhq/devices': 8.0.7
-      '@ledgerhq/errors': 6.14.0
+      '@ledgerhq/devices': 8.3.0
+      '@ledgerhq/errors': 6.16.4
+      '@ledgerhq/logs': 6.12.0
       events: 3.3.0
     dev: false
 
-  /@ledgerhq/logs@6.10.1:
-    resolution: {integrity: sha512-z+ILK8Q3y+nfUl43ctCPuR4Y2bIxk/ooCQFwZxhtci1EhAtMDzMAx2W25qx8G1PPL9UUOdnUax19+F0OjXoj4w==}
+  /@ledgerhq/logs@6.12.0:
+    resolution: {integrity: sha512-ExDoj1QV5eC6TEbMdLUMMk9cfvNKhhv5gXol4SmULRVCx/3iyCPhJ74nsb3S0Vb+/f+XujBEj3vQn5+cwS0fNA==}
     dev: false
 
   /@metamask/jazzicon@2.0.0:
@@ -1945,11 +1946,10 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /rxjs@6.6.7:
-    resolution: {integrity: sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==}
-    engines: {npm: '>=2.0.0'}
+  /rxjs@7.8.1:
+    resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
-      tslib: 1.14.1
+      tslib: 2.6.1
     dev: false
 
   /sade@1.8.1:
@@ -2300,10 +2300,6 @@ packages:
   /totalist@3.0.1:
     resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
     engines: {node: '>=6'}
-    dev: false
-
-  /tslib@1.14.1:
-    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: false
 
   /tslib@2.6.1:

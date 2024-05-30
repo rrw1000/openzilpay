@@ -106,7 +106,8 @@
 	}
 
 	function updatePool() {
-		const [inputToken, outputToken] = tokens;
+	  const [inputToken, outputToken] = tokens;
+          console.log(`Fish - ${JSON.serialize($zrcStore)}`);
 		const foundInput = $zrcStore.find((t) => t.base16 === inputToken.meta.base16);
 		const foundOutput = $zrcStore.find((t) => t.base16 === outputToken.meta.base16);
 

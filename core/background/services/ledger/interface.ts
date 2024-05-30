@@ -30,7 +30,6 @@ export class LedgerInterface {
 
   constructor(transport: Transport, scrambleKey = 'w0w') {
     this.#transport = transport;
-    alert('case 2.2');
     transport.decorateAppAPIMethods(
       this,
       ['getVersion', 'getPublicKey', 'getPublicAddress', 'signHash', 'signTxn'],

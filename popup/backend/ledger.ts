@@ -22,7 +22,10 @@ export async function loadLedgerAccount(index: number, productId: number, name: 
       publicKey,
     }
   }).send();
+  console.log("L0");
   const state = warpMessage(data);
+  console.log("L1");
   updateState(state);
+  console.log("L2");
   return state;
 }

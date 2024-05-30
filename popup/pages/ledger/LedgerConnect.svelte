@@ -65,15 +65,16 @@
     loading = true;
 
     try {
+      console.log("___")
       await loadLedgerAccount(index, Number(params.id), name);
-
+      console.log("AAA");
       push('/');
     } catch (err) {
       var msg = err.message
       if (msg.includes("0x650f")) {
         msg = msg + " - ensure your device is unlocked and has the Zilliqa app running"
       }
-      error = msg;
+      error = "Connection error: " + msg;
     }
     loading = false;
   };
