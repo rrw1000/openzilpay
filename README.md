@@ -1,4 +1,4 @@
-# ZilPay-rrw Browser Extension
+# OpenZilPay Browser Extension
 
 This is a fork of the last GPL'd ZilPay commit, because I like my source open :-)
 
@@ -14,32 +14,21 @@ You can deploy the local version, from source code.
 
 ``` bash
 # Install dependencies
-$ npm install
+$ pnpm i
 # Build stuff
-$ npm run dev
+$ pnpm run dev
 # Install it via "install unpacked" in chrome
 ```
 
 ---
 
-Testing project.
-``` bash
-# run unit tests
-$ npm test:unit
-
-# Watch testing for dev.
-$ npm run test:watch
-
-# Check lint ts,vue files.
-$ npm run lint
-
-```
+Testing isn't yet supported :-(
 
 ---
 
 For production building and deploy.
 ``` bash
-$ npm run build
+$ pnpm run build
 ```
 
 ## Updating icons
