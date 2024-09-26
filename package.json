@@ -23,7 +23,7 @@
     "@types/elliptic": "^6.4.14",
     "@types/hdkey": "^2.0.1",
     "@types/pbkdf2": "^3.1.0",
-    "rollup": "^2.79.1",
+    "rollup": "^3.29.5",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-define": "^1.0.1",
