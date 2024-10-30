@@ -50,7 +50,7 @@
     "bn.js": "^5.2.1",
     "buffer": "^6.0.3",
     "crypto-js": "^4.1.1",
-    "elliptic": "^6.5.4",
+    "elliptic": "^6.6.0",
     "hash.js": "^1.1.7",
     "hmac-drbg": "^1.0.1",
     "long": "^5.2.3",
